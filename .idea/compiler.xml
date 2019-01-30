@@ -2,8 +2,88 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="application-context-aware_main" target="1.8" />
+      <module name="application-context-aware_test" target="1.8" />
+      <module name="bean-aliases_main" target="1.8" />
+      <module name="bean-aliases_test" target="1.8" />
+      <module name="bean-autowiring_main" target="1.8" />
+      <module name="bean-autowiring_test" target="1.8" />
+      <module name="bean-inheritance_main" target="1.8" />
+      <module name="bean-inheritance_test" target="1.8" />
+      <module name="bean-init-method_main" target="1.8" />
+      <module name="bean-init-method_test" target="1.8" />
+      <module name="bean-instantiation-mode_main" target="1.8" />
+      <module name="bean-instantiation-mode_test" target="1.8" />
+      <module name="bean-name-aware_main" target="1.8" />
+      <module name="bean-name-aware_test" target="1.8" />
+      <module name="boot-simple_main" target="1.8" />
+      <module name="boot-simple_test" target="1.8" />
+      <module name="boot-web_main" target="1.8" />
+      <module name="boot-web_test" target="1.8" />
+      <module name="cdl_main" target="1.8" />
+      <module name="cdl_test" target="1.8" />
+      <module name="collections_main" target="1.8" />
+      <module name="collections_test" target="1.8" />
+      <module name="constructor-injection_main" target="1.8" />
+      <module name="constructor-injection_test" target="1.8" />
+      <module name="dependency-pull_main" target="1.8" />
+      <module name="dependency-pull_test" target="1.8" />
+      <module name="disposable-bean_main" target="1.8" />
+      <module name="disposable-bean_test" target="1.8" />
+      <module name="environment_main" target="1.8" />
+      <module name="environment_test" target="1.8" />
+      <module name="events_main" target="1.8" />
+      <module name="events_test" target="1.8" />
+      <module name="factory-bean-and-factory-method-attributes_main" target="1.8" />
+      <module name="factory-bean-and-factory-method-attributes_test" target="1.8" />
+      <module name="factory-bean_main" target="1.8" />
+      <module name="factory-bean_test" target="1.8" />
+      <module name="field-injection_main" target="1.8" />
+      <module name="field-injection_test" target="1.8" />
+      <module name="groovy-config-java_main" target="1.8" />
+      <module name="groovy-config-java_test" target="1.8" />
+      <module name="groovy-config_main" target="1.8" />
+      <module name="groovy-config_test" target="1.8" />
       <module name="hello-world_main" target="1.8" />
       <module name="hello-world_test" target="1.8" />
+      <module name="initializing-bean-destroy_main" target="1.8" />
+      <module name="initializing-bean-destroy_test" target="1.8" />
+      <module name="initializing-bean_main" target="1.8" />
+      <module name="initializing-bean_test" target="1.8" />
+      <module name="injection_main" target="1.8" />
+      <module name="injection_test" target="1.8" />
+      <module name="java-config-message-provider_main" target="1.8" />
+      <module name="java-config-message-provider_test" target="1.8" />
+      <module name="java-config_main" target="1.8" />
+      <module name="java-config_test" target="1.8" />
+      <module name="jsr330_main" target="1.8" />
+      <module name="jsr330_test" target="1.8" />
+      <module name="message-source_main" target="1.8" />
+      <module name="message-source_test" target="1.8" />
+      <module name="method-injection_main" target="1.8" />
+      <module name="method-injection_test" target="1.8" />
+      <module name="method-replacement_main" target="1.8" />
+      <module name="method-replacement_test" target="1.8" />
+      <module name="nesting_main" target="1.8" />
+      <module name="nesting_test" target="1.8" />
+      <module name="post-construct-pre-destroy_main" target="1.8" />
+      <module name="post-construct-pre-destroy_test" target="1.8" />
+      <module name="post-construct_main" target="1.8" />
+      <module name="post-construct_test" target="1.8" />
+      <module name="profiles_main" target="1.8" />
+      <module name="profiles_test" target="1.8" />
+      <module name="property-editors_main" target="1.8" />
+      <module name="property-editors_test" target="1.8" />
+      <module name="property-placeholder_main" target="1.8" />
+      <module name="property-placeholder_test" target="1.8" />
+      <module name="resource_main" target="1.8" />
+      <module name="resource_test" target="1.8" />
+      <module name="setter-injection_main" target="1.8" />
+      <module name="setter-injection_test" target="1.8" />
+      <module name="shutdown-hook_main" target="1.8" />
+      <module name="shutdown-hook_test" target="1.8" />
+      <module name="simple-types_main" target="1.8" />
+      <module name="simple-types_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

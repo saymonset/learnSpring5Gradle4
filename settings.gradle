@@ -2,7 +2,7 @@ rootProject.name = 'pro-spring-5-master'
 
 
 include 'chapter02:hello-world'
-/*
+
 
 include 'chapter03:bean-aliases'
 include 'chapter03:bean-autowiring'
@@ -19,6 +19,7 @@ include 'chapter03:nesting'
 include 'chapter03:setter-injection'
 include 'chapter03:simple-types'
 include 'chapter03:field-injection'
+
 
 include 'chapter04:application-context-aware'
 include 'chapter04:bean-init-method'
@@ -44,7 +45,7 @@ include 'chapter04:property-placeholder'
 include 'chapter04:resource'
 include 'chapter04:shutdown-hook'
 include 'chapter04:boot-simple'
-include 'chapter04:boot-web'*/
+include 'chapter04:boot-web'
 
 /*
 include 'chapter05:after-returning-advice-keygen'
