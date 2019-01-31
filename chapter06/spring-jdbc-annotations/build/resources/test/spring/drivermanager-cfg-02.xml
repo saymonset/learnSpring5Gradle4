@@ -12,7 +12,7 @@
           class="org.springframework.jdbc.datasource.DriverManagerDataSource"
           p:driverClassName="#{jdbc.driverClassName}"
           p:url="#{jdbc.url}"
-          p:username="#{jdbc.username}"
+          p:username="#{jdbc.hola}"
           p:password="#{jdbc.password}"/>
 
     <util:properties id="jdbc" location="classpath:db/jdbc2.properties"/>
