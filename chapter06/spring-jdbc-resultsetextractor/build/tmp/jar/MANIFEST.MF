@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Specification-Title: Pro Spring 5
+Class-Path: plain-jdbc-5.0-SNAPSHOT.jar spring-context-5.0.2.RELEASE.j
+ ar spring-jdbc-5.0.2.RELEASE.jar jcl-over-slf4j-1.7.25.jar logback-cl
+ assic-1.2.3.jar commons-dbcp2-2.1.jar commons-lang3-3.5.jar h2-1.4.19
+ 4.jar spring-aop-5.0.2.RELEASE.jar spring-tx-5.0.2.RELEASE.jar spring
+ -beans-5.0.2.RELEASE.jar spring-expression-5.0.2.RELEASE.jar spring-c
+ ore-5.0.2.RELEASE.jar slf4j-api-1.7.25.jar logback-core-1.2.3.jar com
+ mons-pool2-2.3.jar commons-logging-1.2.jar mysql-connector-java-6.0.6
+ .jar spring-jcl-5.0.2.RELEASE.jar
+Created-By: Iuliana Cosmina
+

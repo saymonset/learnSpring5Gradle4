@@ -1,0 +1,90 @@
+ô15:38:47.125 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Thu Jan 31 15:38:47 VET 2019]; root of context hierarchy
+­15:38:47.313 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+—15:38:47.314 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+o15:38:47.601 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+P15:38:47.601 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+h15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+<15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+>15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+<15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+o15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+…15:38:47.635 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+{15:38:47.664 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+˜15:38:47.664 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
+U15:38:47.668 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+”15:38:47.668 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
+d15:38:47.675 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+c15:38:47.964 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+ISinger - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-15
+KSinger - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
+JSinger - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
+ñ15:38:47.967 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Thu Jan 31 15:38:47 VET 2019]; root of context hierarchy
+15:38:47.987 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/drivermanager-cfg-02.xml]
+å15:38:48.114 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@6972568d: startup date [Thu Jan 31 15:38:48 VET 2019]; root of context hierarchy
+p15:38:48.179 [Test worker] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+¤15:38:48.180 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
+â15:38:48.183 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@6972568d: startup date [Thu Jan 31 15:38:48 VET 2019]; root of context hierarchy
+ó15:38:48.187 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f63b44e: startup date [Thu Jan 31 15:38:48 VET 2019]; root of context hierarchy
+œ15:38:48.238 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
+W15:38:48.250 [Test worker] DEBUG c.a.p.c.DbConfigTest - Something unexpected happened.
+Yjava.sql.SQLException: Access denied for user 'simon'@'172.17.0.1' (using password: YES)
+P	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+P	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+h	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+K	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+E	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+J	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+R	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+x	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:143)
+†	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+|	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+P	at com.apress.prospring5.ch6.DbConfigTest.testDataSource(DbConfigTest.java:56)
+I	at com.apress.prospring5.ch6.DbConfigTest.testTwo(DbConfigTest.java:48)
+@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5	at java.lang.reflect.Method.invoke(Method.java:497)
+Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+@	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+D	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+>	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5	at java.lang.reflect.Method.invoke(Method.java:497)
+Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+;	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+@	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+R	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Z	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+5	at java.lang.reflect.Method.invoke(Method.java:497)
+Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+T	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+T	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+*	at java.lang.Thread.run(Thread.java:745)
+ð15:38:48.251 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@f63b44e: startup date [Thu Jan 31 15:38:48 VET 2019]; root of context hierarchy

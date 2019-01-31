@@ -72,7 +72,7 @@ include 'chapter05:static-pointcut'
 include 'chapter05:regex-pointcuts'
 include 'chapter05:simple-before-advice'
 include 'chapter05:aspectj-boot' */
-/*
+
 
 include 'chapter06:plain-jdbc'
 include 'chapter06:spring-jdbc-annotations'
@@ -81,7 +81,7 @@ include 'chapter06:spring-jdbc-namedparam'
 include 'chapter06:spring-jdbc-resultsetextractor'
 include 'chapter06:spring-jdbc-rowmapper'
 include 'chapter06:spring-boot-jdbc'
-
+/*
 include 'chapter07:hibernate-crud'
 include 'chapter07:hibernate-base'
 

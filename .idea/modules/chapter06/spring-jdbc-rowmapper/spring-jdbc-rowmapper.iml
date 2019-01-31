@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":chapter06:spring-jdbc-rowmapper" external.linked.project.path="$MODULE_DIR$/../../../../chapter06/spring-jdbc-rowmapper" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="com.apress.prospring5.ch06" external.system.module.version="5.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../chapter06/spring-jdbc-rowmapper">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../chapter06/spring-jdbc-rowmapper/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../chapter06/spring-jdbc-rowmapper/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

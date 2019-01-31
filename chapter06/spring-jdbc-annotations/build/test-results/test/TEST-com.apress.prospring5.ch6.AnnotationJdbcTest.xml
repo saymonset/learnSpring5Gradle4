@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.prospring5.ch6.AnnotationJdbcTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-31T20:08:46" hostname="simon-XPS-15-9560" time="1.23">
+  <properties/>
+  <testcase name="testFindAll" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="1.23"/>
+  <system-out><![CDATA[15:38:47.125 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Thu Jan 31 15:38:47 VET 2019]; root of context hierarchy
+15:38:47.313 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:38:47.314 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:38:47.601 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:38:47.601 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:38:47.602 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:38:47.635 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:38:47.664 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+15:38:47.664 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
+15:38:47.668 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+15:38:47.668 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
+15:38:47.675 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:38:47.964 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-15
+Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
+Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
+15:38:47.967 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Thu Jan 31 15:38:47 VET 2019]; root of context hierarchy
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -6,7 +6,6 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../gradle-4.4.1" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -54,8 +53,17 @@
             <option value="$PROJECT_DIR$/chapter04/property-placeholder" />
             <option value="$PROJECT_DIR$/chapter04/resource" />
             <option value="$PROJECT_DIR$/chapter04/shutdown-hook" />
+            <option value="$PROJECT_DIR$/chapter06" />
+            <option value="$PROJECT_DIR$/chapter06/plain-jdbc" />
+            <option value="$PROJECT_DIR$/chapter06/spring-boot-jdbc" />
+            <option value="$PROJECT_DIR$/chapter06/spring-jdbc-annotations" />
+            <option value="$PROJECT_DIR$/chapter06/spring-jdbc-embedded" />
+            <option value="$PROJECT_DIR$/chapter06/spring-jdbc-namedparam" />
+            <option value="$PROJECT_DIR$/chapter06/spring-jdbc-resultsetextractor" />
+            <option value="$PROJECT_DIR$/chapter06/spring-jdbc-rowmapper" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

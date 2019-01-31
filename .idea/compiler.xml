@@ -66,6 +66,8 @@
       <module name="method-replacement_test" target="1.8" />
       <module name="nesting_main" target="1.8" />
       <module name="nesting_test" target="1.8" />
+      <module name="plain-jdbc_main" target="1.8" />
+      <module name="plain-jdbc_test" target="1.8" />
       <module name="post-construct-pre-destroy_main" target="1.8" />
       <module name="post-construct-pre-destroy_test" target="1.8" />
       <module name="post-construct_main" target="1.8" />
@@ -84,6 +86,18 @@
       <module name="shutdown-hook_test" target="1.8" />
       <module name="simple-types_main" target="1.8" />
       <module name="simple-types_test" target="1.8" />
+      <module name="spring-boot-jdbc_main" target="1.8" />
+      <module name="spring-boot-jdbc_test" target="1.8" />
+      <module name="spring-jdbc-annotations_main" target="1.8" />
+      <module name="spring-jdbc-annotations_test" target="1.8" />
+      <module name="spring-jdbc-embedded_main" target="1.8" />
+      <module name="spring-jdbc-embedded_test" target="1.8" />
+      <module name="spring-jdbc-namedparam_main" target="1.8" />
+      <module name="spring-jdbc-namedparam_test" target="1.8" />
+      <module name="spring-jdbc-resultsetextractor_main" target="1.8" />
+      <module name="spring-jdbc-resultsetextractor_test" target="1.8" />
+      <module name="spring-jdbc-rowmapper_main" target="1.8" />
+      <module name="spring-jdbc-rowmapper_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
