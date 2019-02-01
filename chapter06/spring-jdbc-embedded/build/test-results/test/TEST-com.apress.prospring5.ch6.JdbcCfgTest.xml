@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch6.JdbcCfgTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-31T20:08:48" hostname="simon-XPS-15-9560" time="2.922">
+<testsuite name="com.apress.prospring5.ch6.JdbcCfgTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-02-01T16:02:34" hostname="simon-XPS-15-9560" time="2.823">
   <properties/>
-  <testcase name="testPopulatorJavaConfig" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="1.107"/>
-  <testcase name="testDerby" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="1.683"/>
-  <testcase name="testH2DB" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="0.061"/>
-  <testcase name="testEmbeddedJavaConfig" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="0.071"/>
-  <system-out><![CDATA[15:38:48,924 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-15:38:48,924 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-15:38:48,925 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
-15:38:48,925 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-15:38:48,925 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
-15:38:48,925 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
-15:38:48,990 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-15:38:48,992 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
-15:38:49,004 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3a895e9d - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
-15:38:49,004 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
-15:38:49,004 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-15:38:49,008 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
-15:38:49,009 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-15:38:49,054 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch6] to DEBUG
-15:38:49,055 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3a895e9d - Propagating DEBUG level on Logger[com.apress.prospring5.ch6] onto the JUL framework
-15:38:49,055 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
-15:38:49,055 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3a895e9d - Propagating OFF level on Logger[org.springframework] onto the JUL framework
-15:38:49,055 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-15:38:49,055 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3a895e9d - Propagating INFO level on Logger[ROOT] onto the JUL framework
-15:38:49,055 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
-15:38:49,056 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-15:38:49,056 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6b4a3f22 - Registering current configuration as safe fallback point
+  <testcase name="testPopulatorJavaConfig" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="1.038"/>
+  <testcase name="testDerby" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="1.636"/>
+  <testcase name="testH2DB" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="0.081"/>
+  <testcase name="testEmbeddedJavaConfig" classname="com.apress.prospring5.ch6.JdbcCfgTest" time="0.066"/>
+  <system-out><![CDATA[11:32:34,241 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:32:34,241 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:32:34,242 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
+11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
+11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
+11:32:34,302 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:32:34,304 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+11:32:34,316 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+11:32:34,316 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+11:32:34,316 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:32:34,319 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+11:32:34,321 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch6] to DEBUG
+11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[com.apress.prospring5.ch6] onto the JUL framework
+11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
+11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:32:34,367 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:32:34,368 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@35f4f3ba - Registering current configuration as safe fallback point
 
  saymonsddd John Mayer
  saymonsddd FIN
-15:38:49.931 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+11:32:35.192 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
  saymonsddd John Mayer
  saymonsddd FIN
  saymonsddd John Mayer
  saymonsddd FIN
-15:38:51.692 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+11:32:36.927 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
  saymonsddd John Mayer
  saymonsddd FIN
-15:38:51.764 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+11:32:36.995 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

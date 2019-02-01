@@ -6,7 +6,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util
-        http://www.springframework.org/schema/util/spring-util.xsd">
+        http://www.springframework.org/schema/util/spring-util.xsd"
+       >
 
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource"
@@ -14,6 +15,7 @@
           p:url="#{jdbc.url}"
           p:username="#{jdbc.hola}"
           p:password="#{jdbc.password}"/>
+
 
     <util:properties id="jdbc" location="classpath:db/jdbc2.properties"/>
 
