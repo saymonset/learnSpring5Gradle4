@@ -61,6 +61,9 @@
             <option value="$PROJECT_DIR$/chapter06/spring-jdbc-namedparam" />
             <option value="$PROJECT_DIR$/chapter06/spring-jdbc-resultsetextractor" />
             <option value="$PROJECT_DIR$/chapter06/spring-jdbc-rowmapper" />
+            <option value="$PROJECT_DIR$/chapter07" />
+            <option value="$PROJECT_DIR$/chapter07/hibernate-base" />
+            <option value="$PROJECT_DIR$/chapter07/hibernate-crud" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

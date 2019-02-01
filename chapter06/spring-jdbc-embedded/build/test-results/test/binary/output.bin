@@ -1,34 +1,34 @@
-r11:32:34,241 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-p11:32:34,241 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-Þ11:32:34,242 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
-†11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-ì11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
-ß11:32:34,243 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
-i11:32:34,302 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-Å11:32:34,304 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
-’11:32:34,316 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
-x11:32:34,316 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
-•11:32:34,316 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-f11:32:34,319 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
-µ11:32:34,321 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-‡11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch6] to DEBUG
-§11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[com.apress.prospring5.ch6] onto the JUL framework
-11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
-Ÿ11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating OFF level on Logger[org.springframework] onto the JUL framework
-s11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-‘11:32:34,367 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating INFO level on Logger[ROOT] onto the JUL framework
-11:32:34,367 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
-g11:32:34,367 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-Š11:32:34,368 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@35f4f3ba - Registering current configuration as safe fallback point
+r15:02:13,468 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+p15:02:13,468 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+Þ15:02:13,469 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
+†15:02:13,469 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+ì15:02:13,469 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
+ß15:02:13,469 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/spring-jdbc-embedded/build/resources/main/logback.xml]
+i15:02:13,530 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+Å15:02:13,531 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+’15:02:13,544 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+x15:02:13,544 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+•15:02:13,544 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+f15:02:13,548 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+µ15:02:13,549 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+‡15:02:13,599 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch6] to DEBUG
+§15:02:13,599 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating DEBUG level on Logger[com.apress.prospring5.ch6] onto the JUL framework
+15:02:13,599 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
+Ÿ15:02:13,599 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+s15:02:13,599 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+‘15:02:13,599 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@275b3ebd - Propagating INFO level on Logger[ROOT] onto the JUL framework
+15:02:13,599 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+g15:02:13,600 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+Š15:02:13,601 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@35f4f3ba - Registering current configuration as safe fallback point
 
  saymonsddd John Mayer
  saymonsddd FIN
-Q11:32:35.192 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+Q15:02:14.438 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
  saymonsddd John Mayer
  saymonsddd FIN
  saymonsddd John Mayer
  saymonsddd FIN
-Q11:32:36.927 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+Q15:02:16.178 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
  saymonsddd John Mayer
  saymonsddd FIN
-Q11:32:36.995 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+Q15:02:16.251 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.

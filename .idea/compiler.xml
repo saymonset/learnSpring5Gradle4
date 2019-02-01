@@ -46,6 +46,10 @@
       <module name="groovy-config_test" target="1.8" />
       <module name="hello-world_main" target="1.8" />
       <module name="hello-world_test" target="1.8" />
+      <module name="hibernate-base_main" target="1.8" />
+      <module name="hibernate-base_test" target="1.8" />
+      <module name="hibernate-crud_main" target="1.8" />
+      <module name="hibernate-crud_test" target="1.8" />
       <module name="initializing-bean-destroy_main" target="1.8" />
       <module name="initializing-bean-destroy_test" target="1.8" />
       <module name="initializing-bean_main" target="1.8" />

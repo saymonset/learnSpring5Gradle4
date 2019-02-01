@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch6.DbConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-02-01T16:02:33" hostname="simon-XPS-15-9560" time="0.288">
+<testsuite name="com.apress.prospring5.ch6.DbConfigTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-02-01T19:32:12" hostname="simon-XPS-15-9560" time="0.293">
   <properties/>
-  <testcase name="testOne" classname="com.apress.prospring5.ch6.DbConfigTest" time="0.227"/>
-  <testcase name="testTwo" classname="com.apress.prospring5.ch6.DbConfigTest" time="0.061"/>
-  <system-out><![CDATA[11:32:33.137 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/drivermanager-cfg-02.xml]
-11:32:33.274 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4dbc0ae1: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
-11:32:33.346 [Test worker] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
-11:32:33.347 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
-11:32:33.351 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@4dbc0ae1: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
-11:32:33.356 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@c61e09f: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
-11:32:33.408 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
-11:32:33.411 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@c61e09f: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
+  <testcase name="testOne" classname="com.apress.prospring5.ch6.DbConfigTest" time="0.234"/>
+  <testcase name="testTwo" classname="com.apress.prospring5.ch6.DbConfigTest" time="0.058"/>
+  <system-out><![CDATA[15:02:12.458 [Test worker] INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/drivermanager-cfg-02.xml]
+15:02:12.596 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@65e98a05: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.675 [Test worker] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+15:02:12.676 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
+15:02:12.680 [Test worker] INFO  o.s.c.s.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@65e98a05: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.685 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b5d75c4: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.734 [Test worker] DEBUG o.s.j.d.SimpleDriverDataSource - Creating new JDBC Driver Connection to [jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true]
+15:02:12.739 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b5d75c4: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

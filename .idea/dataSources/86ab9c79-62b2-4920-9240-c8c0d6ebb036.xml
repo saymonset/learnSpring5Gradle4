@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MUSICDB@172.17.0.2">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="MUSICDB">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="jbpm"/>
+    <schema id="5" parent="1" name="journal"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <table id="8" parent="2" name="ALBUM"/>
+    <table id="9" parent="2" name="INSTRUMENT"/>
+    <table id="10" parent="2" name="SINGER"/>
+    <table id="11" parent="2" name="SINGER_INSTRUMENT"/>
+    <column id="12" parent="8" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="8" name="SINGER_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="8" name="TITLE">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="8" name="RELEASE_DATE">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="16" parent="8" name="VERSION">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="17" parent="8" name="UQ_SINGER_ALBUM_1">
+      <ColNames>SINGER_ID
+TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="19" parent="8" name="UQ_SINGER_ALBUM_1">
+      <ColNames>SINGER_ID
+TITLE</ColNames>
+      <UnderlyingIndexName>UQ_SINGER_ALBUM_1</UnderlyingIndexName>
+    </key>
+    <foreign-key id="20" parent="8" name="FK_ALBUM_SINGER">
+      <ColNames>SINGER_ID</ColNames>
+      <RefSchemaName>MUSICDB</RefSchemaName>
+      <RefTableName>SINGER</RefTableName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="21" parent="9" name="INSTRUMENT_ID">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="22" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>INSTRUMENT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="10" name="FIRST_NAME">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="10" name="LAST_NAME">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="10" name="BIRTH_DATE">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="27" parent="10" name="VERSION">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="28" parent="10" name="UQ_SINGER_1">
+      <ColNames>FIRST_NAME
+LAST_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="29" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="30" parent="10" name="UQ_SINGER_1">
+      <ColNames>FIRST_NAME
+LAST_NAME</ColNames>
+      <UnderlyingIndexName>UQ_SINGER_1</UnderlyingIndexName>
+    </key>
+    <column id="31" parent="11" name="SINGER_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="11" name="INSTRUMENT_ID">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="33" parent="11" name="FK_SINGER_INSTRUMENT_2">
+      <ColNames>INSTRUMENT_ID</ColNames>
+    </index>
+    <key id="34" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SINGER_ID
+INSTRUMENT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="35" parent="11" name="FK_SINGER_INSTRUMENT_1">
+      <ColNames>SINGER_ID</ColNames>
+      <RefSchemaName>MUSICDB</RefSchemaName>
+      <RefTableName>SINGER</RefTableName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="36" parent="11" name="FK_SINGER_INSTRUMENT_2">
+      <ColNames>INSTRUMENT_ID</ColNames>
+      <RefSchemaName>MUSICDB</RefSchemaName>
+      <RefTableName>INSTRUMENT</RefTableName>
+      <RefColNames>INSTRUMENT_ID</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

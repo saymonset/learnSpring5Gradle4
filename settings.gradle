@@ -81,10 +81,10 @@ include 'chapter06:spring-jdbc-namedparam'
 include 'chapter06:spring-jdbc-resultsetextractor'
 include 'chapter06:spring-jdbc-rowmapper'
 include 'chapter06:spring-boot-jdbc'
-/*
+
 include 'chapter07:hibernate-crud'
 include 'chapter07:hibernate-base'
-
+/*
 include 'chapter08:jpa-crud'
 include 'chapter08:jpa-criteria'
 include 'chapter08:spring-data-jpa'

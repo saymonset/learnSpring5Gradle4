@@ -1,0 +1,51 @@
+X15:02:23.162 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
+_15:02:23.170 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+l15:02:23.235 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+n15:02:23.408 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:24.283 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+P15:02:24.691 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers:
+‚15:02:24.691 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+„15:02:24.691 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+ƒ15:02:24.691 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+n15:02:24.827 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:24.899 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+‚15:02:24.974 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+n15:02:25.086 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:25.143 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+a15:02:25.204 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+‚15:02:25.205 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+’15:02:25.206 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+‡15:02:25.206 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+ƒ15:02:25.207 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+„15:02:25.207 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+‰15:02:25.207 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 3, Singer id: 2, Title: From The Cradle , Release Date: 1994-09-13
+n15:02:25.332 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:25.384 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+U15:02:25.434 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer deleted with id: 2
+a15:02:25.459 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+‚15:02:25.460 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+‡15:02:25.460 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+’15:02:25.460 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+ƒ15:02:25.460 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+n15:02:25.571 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:25.614 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+S15:02:25.658 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+a15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 4, First name: BB, Last name: King, Birthday: 1940-09-16
+Ž15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 4, Singer id: 4, Title: A Heart Full of Blues, Release Date: 1962-04-20
+‰15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 5, Singer id: 4, Title: My Kind of Blues, Release Date: 1961-08-18
+‚15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+‡15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+’15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+ƒ15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+„15:02:25.664 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+‰15:02:25.665 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 3, Singer id: 2, Title: From The Cradle , Release Date: 1994-09-13
+n15:02:25.769 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+v15:02:25.822 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+S15:02:25.860 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+a15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+Š15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-16
+’15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+„15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+‰15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - Id: 3, Singer id: 2, Title: From The Cradle , Release Date: 1994-09-13
+ƒ15:02:25.869 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01

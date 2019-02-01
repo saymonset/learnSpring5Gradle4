@@ -1,146 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch6.AnnotationJdbcTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-02-01T16:02:31" hostname="simon-XPS-15-9560" time="1.717">
+<testsuite name="com.apress.prospring5.ch6.AnnotationJdbcTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-02-01T19:32:10" hostname="simon-XPS-15-9560" time="1.714">
   <properties/>
-  <testcase name="testSingerUpdate" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="1.216"/>
-  <testcase name="testFindAll" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.101"/>
-  <testcase name="testSingerInsertWithAlbum" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.091"/>
-  <testcase name="testFindFirstNameById" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.084"/>
-  <testcase name="testFindByFirstName" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.117"/>
-  <testcase name="testSingerInsert" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.107"/>
-  <system-out><![CDATA[11:32:31.778 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d8a65f1: startup date [Fri Feb 01 11:32:31 VET 2019]; root of context hierarchy
-11:32:31.972 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:31.974 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.244 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.245 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:32.275 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
-11:32:32.308 [Test worker] DEBUG c.a.p.c.UpdateSinger - SQL operation not compiled before execution - invoking compile
-11:32:32.308 [Test worker] DEBUG c.a.p.c.UpdateSinger - RdbmsOperation with SQL [update SINGER set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id] compiled
-11:32:32.314 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL update
-11:32:32.315 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [update SINGER set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id]
-11:32:32.321 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:32.606 [Test worker] DEBUG o.s.j.c.JdbcTemplate - SQL update affected 1 rows
-11:32:32.611 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
-11:32:32.612 [Test worker] INFO  c.a.p.c.d.JdbcSingerDao - Existing singer updated with id: 1
-11:32:32.612 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
-11:32:32.612 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
-11:32:32.613 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
-11:32:32.614 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
-11:32:32.614 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:32.618 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+  <testcase name="testSingerUpdate" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="1.213"/>
+  <testcase name="testFindAll" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.111"/>
+  <testcase name="testSingerInsertWithAlbum" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.094"/>
+  <testcase name="testFindFirstNameById" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.091"/>
+  <testcase name="testFindByFirstName" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.111"/>
+  <testcase name="testSingerInsert" classname="com.apress.prospring5.ch6.AnnotationJdbcTest" time="0.092"/>
+  <system-out><![CDATA[15:02:11.101 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Fri Feb 01 15:02:11 VET 2019]; root of context hierarchy
+15:02:11.285 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:11.287 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:11.571 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:11.604 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:11.638 [Test worker] DEBUG c.a.p.c.UpdateSinger - SQL operation not compiled before execution - invoking compile
+15:02:11.638 [Test worker] DEBUG c.a.p.c.UpdateSinger - RdbmsOperation with SQL [update SINGER set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id] compiled
+15:02:11.644 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL update
+15:02:11.645 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [update SINGER set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where id=:id]
+15:02:11.650 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:11.926 [Test worker] DEBUG o.s.j.c.JdbcTemplate - SQL update affected 1 rows
+15:02:11.931 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+15:02:11.932 [Test worker] INFO  c.a.p.c.d.JdbcSingerDao - Existing singer updated with id: 1
+15:02:11.932 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+15:02:11.932 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
+15:02:11.934 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+15:02:11.935 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
+15:02:11.935 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:11.940 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
 Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-15
 Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
 Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
-Singer - Id: 6, First name: Bte322B, Last name: Ki2t2e3ng, Birthday: 1940-09-15
-Singer - Id: 8, First name: s3aeton, Last name: Simte2ons, Birthday: 1991-02-16
-11:32:32.619 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d8a65f1: startup date [Fri Feb 01 11:32:31 VET 2019]; root of context hierarchy
-11:32:32.626 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@25dfdc0f: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.662 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.662 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.696 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:32.701 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
-11:32:32.712 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
-11:32:32.712 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
-11:32:32.712 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
-11:32:32.712 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
-11:32:32.712 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:32.722 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+15:02:11.941 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b0cf461: startup date [Fri Feb 01 15:02:11 VET 2019]; root of context hierarchy
+15:02:11.948 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51871125: startup date [Fri Feb 01 15:02:11 VET 2019]; root of context hierarchy
+15:02:11.987 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:11.988 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.028 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.029 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:12.034 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:12.045 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+15:02:12.045 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
+15:02:12.045 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+15:02:12.045 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
+15:02:12.045 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:12.054 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
 Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-15
 Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
 Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
-Singer - Id: 6, First name: Bte322B, Last name: Ki2t2e3ng, Birthday: 1940-09-15
-Singer - Id: 8, First name: s3aeton, Last name: Simte2ons, Birthday: 1991-02-16
-11:32:32.723 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@25dfdc0f: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.728 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@481af107: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.762 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.762 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.792 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.793 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:32.797 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
-11:32:32.806 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing SQL query [SELECT s.id, s.first_name, s.last_name, s.birth_date, a.id AS album_id, a.title, a.release_date FROM SINGER s LEFT JOIN ALBUM a ON s.id = a.singer_id]
-11:32:32.807 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:32.814 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+15:02:12.055 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@51871125: startup date [Fri Feb 01 15:02:11 VET 2019]; root of context hierarchy
+15:02:12.059 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@660c09e0: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.093 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.094 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.127 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:12.131 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:12.140 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing SQL query [SELECT s.id, s.first_name, s.last_name, s.birth_date, a.id AS album_id, a.title, a.release_date FROM SINGER s LEFT JOIN ALBUM a ON s.id = a.singer_id]
+15:02:12.141 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:12.149 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
 Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-15
 	--> Album - Id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-19
 	--> Album - Id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-16
 Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
-	--> Album - Id: 3, Singer id: 2, Title:  From The Cradle , Release Date: 1994-09-12
 Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
-Singer - Id: 6, First name: Bte322B, Last name: Ki2t2e3ng, Birthday: 1940-09-15
-	--> Album - Id: 4, Singer id: 6, Title: My Kind of Blues, Release Date: 1961-08-17
-	--> Album - Id: 5, Singer id: 6, Title: A Heart Full of Blues, Release Date: 1962-04-19
-Singer - Id: 8, First name: s3aeton, Last name: Simte2ons, Birthday: 1991-02-16
-11:32:32.815 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@481af107: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.819 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2075915b: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.854 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.854 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.887 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:32.891 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:12.149 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@660c09e0: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.154 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@463918e2: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.190 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.190 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.223 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:12.223 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:12.223 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:12.223 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.224 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:12.224 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.224 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:12.229 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
 Retrieved value: Kaka
-11:32:32.898 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2075915b: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.903 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2626487e: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:32.956 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.956 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:32.997 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:32.998 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:33.002 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
-11:32:33.009 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - SQL operation not compiled before execution - invoking compile
-11:32:33.009 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER where first_name = :first_name] compiled
-11:32:33.009 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
-11:32:33.009 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER where first_name = :first_name]
-11:32:33.009 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:33.015 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+15:02:12.241 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@463918e2: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.245 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e49e8b1: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.293 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.294 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.330 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.331 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:12.335 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:12.344 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - SQL operation not compiled before execution - invoking compile
+15:02:12.344 [Test worker] DEBUG c.a.p.c.SelectSingerByFirstName - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER where first_name = :first_name] compiled
+15:02:12.344 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+15:02:12.344 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER where first_name = :first_name]
+15:02:12.344 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:12.352 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
 Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
-11:32:33.015 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2626487e: startup date [Fri Feb 01 11:32:32 VET 2019]; root of context hierarchy
-11:32:33.020 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@23fccd01: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
-11:32:33.059 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:33.059 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
-11:32:33.099 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - root
-11:32:33.100 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
-11:32:33.105 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
-11:32:33.115 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
-11:32:33.115 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
-11:32:33.115 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
-11:32:33.115 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
-11:32:33.115 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
-11:32:33.122 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
+15:02:12.352 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@e49e8b1: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.357 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@200f3d99: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
+15:02:12.390 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [com.apress.prospring5.ch6.config.DbConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [com.apress.prospring5.ch6.config.AppConfig]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.390 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=true; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=dbConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/apress/prospring5/ch6/config/DbConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in com.apress.prospring5.ch6.config.AppConfig]
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - -------------------------1-----------------------------
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - com.mysql.cj.jdbc.Driver
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - jdbc:mysql://172.17.0.2:3306/MUSICDB?useSSL=true
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - 123456
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - root
+15:02:12.428 [Test worker] INFO  c.a.p.c.c.AppConfig - ------------------------2------------------------------
+15:02:12.432 [Test worker] DEBUG c.a.p.c.StoredFunctionFirstNameById - RdbmsOperation with SQL [select getfirstnamebyid(?)] compiled
+15:02:12.438 [Test worker] DEBUG c.a.p.c.SelectAllSingers - SQL operation not compiled before execution - invoking compile
+15:02:12.438 [Test worker] DEBUG c.a.p.c.SelectAllSingers - RdbmsOperation with SQL [select id, first_name, last_name, birth_date from SINGER] compiled
+15:02:12.439 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL query
+15:02:12.439 [Test worker] DEBUG o.s.j.c.JdbcTemplate - Executing prepared SQL statement [select id, first_name, last_name, birth_date from SINGER]
+15:02:12.439 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Fetching JDBC Connection from DataSource
+15:02:12.444 [Test worker] DEBUG o.s.j.d.DataSourceUtils - Returning JDBC Connection to DataSource
 Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-15
 Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-29
 Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-03-31
-Singer - Id: 6, First name: Bte322B, Last name: Ki2t2e3ng, Birthday: 1940-09-15
-Singer - Id: 8, First name: s3aeton, Last name: Simte2ons, Birthday: 1991-02-16
-11:32:33.122 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@23fccd01: startup date [Fri Feb 01 11:32:33 VET 2019]; root of context hierarchy
+15:02:12.444 [Test worker] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@200f3d99: startup date [Fri Feb 01 15:02:12 VET 2019]; root of context hierarchy
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

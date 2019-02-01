@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter03/chapter03.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter03/chapter03.iml" group="chapter03" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter04/chapter04.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter04/chapter04.iml" group="chapter04" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter06/chapter06.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter06/chapter06.iml" group="chapter06" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/chapter07.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/chapter07.iml" group="chapter07" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter03/collections/collections.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter03/collections/collections.iml" group="chapter03/collections" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter03/collections/collections_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter03/collections/collections_main.iml" group="chapter03/collections" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter03/collections/collections_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter03/collections/collections_test.iml" group="chapter03/collections" />
@@ -72,6 +73,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world.iml" group="chapter02/hello-world" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world_main.iml" group="chapter02/hello-world" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter02/hello-world/hello-world_test.iml" group="chapter02/hello-world" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base.iml" group="chapter07/hibernate-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base_main.iml" group="chapter07/hibernate-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-base/hibernate-base_test.iml" group="chapter07/hibernate-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud.iml" group="chapter07/hibernate-crud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud_main.iml" group="chapter07/hibernate-crud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter07/hibernate-crud/hibernate-crud_test.iml" group="chapter07/hibernate-crud" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean/initializing-bean.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean/initializing-bean.iml" group="chapter04/initializing-bean" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean-destroy/initializing-bean-destroy.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean-destroy/initializing-bean-destroy.iml" group="chapter04/initializing-bean-destroy" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean-destroy/initializing-bean-destroy_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chapter04/initializing-bean-destroy/initializing-bean-destroy_main.iml" group="chapter04/initializing-bean-destroy" />

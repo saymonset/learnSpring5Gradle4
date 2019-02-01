@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Specification-Title: Pro Spring 5
+Class-Path: mysql-connector-java-6.0.6.jar commons-pool2-2.0.jar sprin
+ g-context-support-5.0.2.RELEASE.jar spring-orm-5.0.2.RELEASE.jar jcl-
+ over-slf4j-1.7.25.jar logback-classic-1.2.3.jar h2-1.4.194.jar common
+ s-lang3-3.5.jar hibernate-entitymanager-5.2.10.Final.jar spring-conte
+ xt-5.0.2.RELEASE.jar spring-jdbc-5.0.2.RELEASE.jar spring-tx-5.0.2.RE
+ LEASE.jar spring-aop-5.0.2.RELEASE.jar spring-beans-5.0.2.RELEASE.jar
+  spring-expression-5.0.2.RELEASE.jar spring-core-5.0.2.RELEASE.jar sl
+ f4j-api-1.7.25.jar logback-core-1.2.3.jar hibernate-core-5.2.10.Final
+ .jar hibernate-commons-annotations-5.0.1.Final.jar jboss-logging-3.3.
+ 0.Final.jar dom4j-1.6.1.jar hibernate-jpa-2.1-api-1.0.0.Final.jar jav
+ assist-3.20.0-GA.jar byte-buddy-1.6.6.jar jboss-transaction-api_1.2_s
+ pec-1.0.1.Final.jar spring-jcl-5.0.2.RELEASE.jar antlr-2.7.7.jar jand
+ ex-2.0.3.Final.jar classmate-1.3.0.jar
+Created-By: Iuliana Cosmina
+Main-Class: com.apress.prospring5.ch7.SpringHibernateDemo
+

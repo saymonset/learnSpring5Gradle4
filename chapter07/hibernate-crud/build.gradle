@@ -1,0 +1,6 @@
+dependencies {
+	compile project(':chapter06:plain-jdbc')
+	compile db.dbcp2
+	compile db.mysql
+	compile db.commonspool2
+}

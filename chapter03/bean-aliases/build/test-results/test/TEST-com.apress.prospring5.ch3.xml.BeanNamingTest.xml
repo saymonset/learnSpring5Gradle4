@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch3.xml.BeanNamingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-01T16:02:23" hostname="simon-XPS-15-9560" time="0.482">
+<testsuite name="com.apress.prospring5.ch3.xml.BeanNamingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-01T19:32:01" hostname="simon-XPS-15-9560" time="0.486">
   <properties/>
-  <testcase name="testNaming" classname="com.apress.prospring5.ch3.xml.BeanNamingTest" time="0.482"/>
+  <testcase name="testNaming" classname="com.apress.prospring5.ch3.xml.BeanNamingTest" time="0.486"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
