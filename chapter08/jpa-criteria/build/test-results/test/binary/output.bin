@@ -1,0 +1,68 @@
+c18:31:50.060 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+X18:31:50.229 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
+_18:31:50.236 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+l18:31:50.377 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+k18:31:50.845 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+v18:31:51.734 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+t18:31:52.087 [Test worker] INFO  c.a.p.c.SingerServiceImpl - Finding singer for firstName: John and lastName: Mayer
+Hibernate: 
+    /* select
+"        distinct generatedAlias0 
+	    from
+#        Singer as generatedAlias0 
+    left join
+9        fetch generatedAlias0.albums as generatedAlias1 
+    left join
+>        fetch generatedAlias0.instruments as generatedAlias2 
+
+    where
+
+        (
+            (
+                1=1 
+            ) 
+            and (
+3                generatedAlias0.firstName=:param0 
+            ) 
+        ) 
+        and (
+.            generatedAlias0.lastName=:param1 
+        ) */ select
+.            distinct singer0_.ID as ID1_2_0_,
+%            albums1_.ID as ID1_0_1_,
+:            instrument3_.INSTRUMENT_ID as INSTRUME1_1_2_,
+3            singer0_.BIRTH_DATE as BIRTH_DA2_2_0_,
+3            singer0_.FIRST_NAME as FIRST_NA3_2_0_,
+2            singer0_.LAST_NAME as LAST_NAM4_2_0_,
+/            singer0_.VERSION as VERSION5_2_0_,
+5            albums1_.RELEASE_DATE as RELEASE_2_0_1_,
+2            albums1_.SINGER_ID as SINGER_I5_0_1_,
++            albums1_.title as title3_0_1_,
+/            albums1_.VERSION as VERSION4_0_1_,
+3            albums1_.SINGER_ID as SINGER_I5_0_0__,
+&            albums1_.ID as ID1_0_0__,
+7            instrument2_.SINGER_ID as SINGER_I1_3_1__,
+;            instrument2_.INSTRUMENT_ID as INSTRUME2_3_1__ 
+        from
+            singer singer0_ 
+        left outer join
+            album albums1_ 
+3                on singer0_.ID=albums1_.SINGER_ID 
+        left outer join
+,            singer_instrument instrument2_ 
+7                on singer0_.ID=instrument2_.SINGER_ID 
+        left outer join
+%            instrument instrument3_ 
+J                on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID 
+        where
+            1=1 
+'            and singer0_.FIRST_NAME=? 
+%            and singer0_.LAST_NAME=?
+a18:31:52.255 [Test worker] INFO  c.a.p.c.SingerJPATest -  ---- Listing singers with instruments:
+‚18:31:52.255 [Test worker] INFO  c.a.p.c.SingerJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+‡18:31:52.256 [Test worker] INFO  c.a.p.c.SingerJPATest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+’18:31:52.256 [Test worker] INFO  c.a.p.c.SingerJPATest - 	Album - id: 1, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+M18:31:52.256 [Test worker] INFO  c.a.p.c.SingerJPATest - 	Instrument: Guitar
+L18:31:52.257 [Test worker] INFO  c.a.p.c.SingerJPATest - 	Instrument: Piano

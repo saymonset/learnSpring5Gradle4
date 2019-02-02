@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.prospring5.ch8.SingerDataJPATest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-02-01T23:01:59" hostname="simon-XPS-15-9560" time="4.34">
+  <properties/>
+  <testcase name="testFindAll" classname="com.apress.prospring5.ch8.SingerDataJPATest" time="3.583"/>
+  <testcase name="testFindByFirstNameAndLastName" classname="com.apress.prospring5.ch8.SingerDataJPATest" time="0.391"/>
+  <testcase name="testFindByFirstName" classname="com.apress.prospring5.ch8.SingerDataJPATest" time="0.366"/>
+  <system-out><![CDATA[18:32:00.713 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:32:00.854 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
+18:32:00.856 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:32:00.929 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:32:01.169 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:32:02.065 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Singer as generatedAlias0 */ select
+            singer0_.ID as ID1_2_,
+            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+            singer0_.FIRST_NAME as FIRST_NA3_2_,
+            singer0_.LAST_NAME as LAST_NAM4_2_,
+            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_
+18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:32:03.186 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:32:03.202 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:32:03.258 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Singer as generatedAlias0 
+    where
+        (
+            generatedAlias0.firstName=:param0 
+        ) 
+        and (
+            generatedAlias0.lastName=:param1 
+        ) */ select
+            singer0_.ID as ID1_2_,
+            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+            singer0_.FIRST_NAME as FIRST_NA3_2_,
+            singer0_.LAST_NAME as LAST_NAM4_2_,
+            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_ 
+        where
+            singer0_.FIRST_NAME=? 
+            and singer0_.LAST_NAME=?
+18:32:03.378 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+18:32:03.378 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:32:03.572 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:32:03.585 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:32:03.630 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Singer as generatedAlias0 
+    where
+        generatedAlias0.firstName=:param0 */ select
+            singer0_.ID as ID1_2_,
+            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+            singer0_.FIRST_NAME as FIRST_NA3_2_,
+            singer0_.LAST_NAME as LAST_NAM4_2_,
+            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_ 
+        where
+            singer0_.FIRST_NAME=?
+18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

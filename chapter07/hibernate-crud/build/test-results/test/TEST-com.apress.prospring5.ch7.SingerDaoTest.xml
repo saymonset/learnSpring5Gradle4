@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apress.prospring5.ch7.SingerDaoTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-02-01T19:32:26" hostname="simon-XPS-15-9560" time="4.228">
+<testsuite name="com.apress.prospring5.ch7.SingerDaoTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-02-01T23:01:39" hostname="simon-XPS-15-9560" time="4.906">
   <properties/>
-  <testcase name="testFindAll" classname="com.apress.prospring5.ch7.SingerDaoTest" time="2.831"/>
-  <testcase name="testFindByID" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.343"/>
-  <testcase name="testFindAllWithAlbum" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.263"/>
-  <testcase name="testDelete" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.266"/>
-  <testcase name="testInsert" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.24"/>
-  <testcase name="testUpdate" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.284"/>
-  <system-out><![CDATA[15:02:26,602 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-15:02:26,602 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-15:02:26,603 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter07/hibernate-crud/build/resources/main/logback.xml]
-15:02:26,604 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
-15:02:26,604 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter07/hibernate-crud/build/resources/main/logback.xml]
-15:02:26,604 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
-15:02:26,665 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-15:02:26,667 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
-15:02:26,679 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
-15:02:26,679 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
-15:02:26,679 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-15:02:26,683 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
-15:02:26,684 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-15:02:26,730 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch7] to DEBUG
-15:02:26,730 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating DEBUG level on Logger[com.apress.prospring5.ch7] onto the JUL framework
-15:02:26,730 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
-15:02:26,730 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating OFF level on Logger[org.springframework] onto the JUL framework
-15:02:26,730 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-15:02:26,730 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating INFO level on Logger[ROOT] onto the JUL framework
-15:02:26,731 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
-15:02:26,731 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-15:02:26,732 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@268e074a - Registering current configuration as safe fallback point
+  <testcase name="testFindAll" classname="com.apress.prospring5.ch7.SingerDaoTest" time="3.509"/>
+  <testcase name="testFindByID" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.347"/>
+  <testcase name="testFindAllWithAlbum" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.277"/>
+  <testcase name="testDelete" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.27"/>
+  <testcase name="testInsert" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.237"/>
+  <testcase name="testUpdate" classname="com.apress.prospring5.ch7.SingerDaoTest" time="0.265"/>
+  <system-out><![CDATA[18:31:39,469 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+18:31:39,470 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+18:31:39,471 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter07/hibernate-crud/build/resources/main/logback.xml]
+18:31:39,474 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+18:31:39,474 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter07/hibernate-crud/build/resources/main/logback.xml]
+18:31:39,474 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/media/simon/OS/opt/book/pro%20spring%205/small/chapter06/plain-jdbc/build/libs/plain-jdbc-5.0-SNAPSHOT.jar!/logback.xml]
+18:31:39,636 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+18:31:39,641 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+18:31:39,661 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+18:31:39,661 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+18:31:39,661 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+18:31:39,667 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+18:31:39,669 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+18:31:39,726 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.apress.prospring5.ch7] to DEBUG
+18:31:39,726 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating DEBUG level on Logger[com.apress.prospring5.ch7] onto the JUL framework
+18:31:39,726 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to OFF
+18:31:39,726 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+18:31:39,726 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+18:31:39,726 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@36be654b - Propagating INFO level on Logger[ROOT] onto the JUL framework
+18:31:39,727 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+18:31:39,727 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+18:31:39,728 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@268e074a - Registering current configuration as safe fallback point
 
-15:02:27.659 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
-15:02:27.665 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
-15:02:27.725 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-15:02:28.152 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:41.114 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
+18:31:41.128 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:31:41.212 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:31:41.643 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -101,9 +101,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:29.058 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:29.081 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:29.253 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:42.740 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:42.762 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:42.932 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -111,7 +111,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.418 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:43.098 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -127,7 +127,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.440 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:43.121 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -143,7 +143,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.441 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:43.123 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -158,7 +158,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.450 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:43.131 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -203,7 +203,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.458 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:43.140 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -230,7 +230,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.461 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:43.143 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -247,7 +247,7 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:29.463 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:43.144 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     /* 
 from
@@ -259,12 +259,12 @@ from
         singer0_.LAST_NAME as LAST_NAM5_2_ 
     from
         singer singer0_
-15:02:29.551 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers:
-15:02:29.551 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
-15:02:29.551 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
-15:02:29.552 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
-15:02:29.553 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:29.564 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:43.224 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers:
+18:31:43.225 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:31:43.225 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+18:31:43.225 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:31:43.226 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:43.238 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists
@@ -280,7 +280,7 @@ Hibernate:
 Hibernate: 
     
     drop sequence if exists hibernate_sequence
-15:02:29.773 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:43.440 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -348,9 +348,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:29.814 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:29.828 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:29.855 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:43.478 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:43.488 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:43.517 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -358,7 +358,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.863 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:43.527 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -374,7 +374,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.865 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:43.530 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -390,7 +390,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:29.867 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:43.532 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -405,7 +405,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.870 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:43.536 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -450,7 +450,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.874 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:43.542 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -477,7 +477,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:29.877 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:43.545 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -494,7 +494,7 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:29.879 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:43.547 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     /* Singer.findById */ select
         distinct singer0_.id as id1_2_0_,
@@ -525,9 +525,9 @@ Hibernate:
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID 
     where
         singer0_.id=?
-15:02:29.910 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
-15:02:29.910 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:29.913 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:43.586 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:31:43.587 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:43.591 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists
@@ -543,7 +543,7 @@ Hibernate:
 Hibernate: 
     
     drop sequence if exists hibernate_sequence
-15:02:30.050 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:43.737 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -611,9 +611,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:30.087 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:30.099 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:30.123 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:43.770 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:43.780 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:43.805 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -621,7 +621,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.130 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:43.817 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -637,7 +637,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.133 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:43.819 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -653,7 +653,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.135 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:43.821 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -668,7 +668,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.138 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:43.825 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -713,7 +713,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.143 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:43.829 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -740,7 +740,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.146 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:43.832 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -757,7 +757,7 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:30.148 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:43.834 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     /* Singer.findAllWithAlbum */ select
         distinct singer0_.id as id1_2_0_,
@@ -786,19 +786,19 @@ Hibernate:
     left outer join
         instrument instrument3_ 
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID
-15:02:30.169 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
-15:02:30.170 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
-15:02:30.170 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
-15:02:30.171 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
-15:02:30.171 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
-15:02:30.171 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.172 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
-15:02:30.172 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.172 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
-15:02:30.172 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
-15:02:30.172 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.173 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:30.176 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:43.861 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+18:31:43.862 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:31:43.863 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+18:31:43.863 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+18:31:43.864 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
+18:31:43.864 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:43.864 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:31:43.864 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:43.864 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+18:31:43.865 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
+18:31:43.865 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:43.865 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:43.868 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists
@@ -814,7 +814,7 @@ Hibernate:
 Hibernate: 
     
     drop sequence if exists hibernate_sequence
-15:02:30.311 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:43.991 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -882,9 +882,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:30.354 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:30.366 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:30.387 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:44.030 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:44.043 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:44.066 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -892,7 +892,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.395 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:44.074 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -908,7 +908,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.397 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:44.076 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -924,7 +924,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.399 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:44.078 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -939,7 +939,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.401 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:44.082 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -984,7 +984,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.405 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:44.087 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1011,7 +1011,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.408 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:44.089 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1028,7 +1028,7 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:30.409 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:44.091 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     /* Singer.findById */ select
         distinct singer0_.id as id1_2_0_,
@@ -1059,7 +1059,7 @@ Hibernate:
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID 
     where
         singer0_.id=?
-15:02:30.432 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer deleted with id: 4
+18:31:44.125 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer deleted with id: 4
 Hibernate: 
     /* delete collection com.apress.prospring5.ch7.entities.Singer.instruments */ delete 
         from
@@ -1108,16 +1108,16 @@ Hibernate:
     left outer join
         instrument instrument3_ 
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID
-15:02:30.440 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
-15:02:30.440 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
-15:02:30.441 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.441 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:30.443 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:44.135 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:31:44.136 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.137 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:44.139 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists
@@ -1133,7 +1133,7 @@ Hibernate:
 Hibernate: 
     
     drop sequence if exists hibernate_sequence
-15:02:30.556 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:44.268 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -1201,9 +1201,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:30.585 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:30.595 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:30.620 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:44.300 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:44.312 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:44.335 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -1211,7 +1211,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.628 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:44.340 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1227,7 +1227,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.631 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:44.342 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1243,7 +1243,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.633 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:44.343 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1258,7 +1258,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.635 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:44.345 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1303,7 +1303,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.640 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:44.349 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1330,7 +1330,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.643 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:44.351 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1347,14 +1347,14 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:30.645 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:44.352 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.670 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 7
+18:31:44.368 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 7
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1407,22 +1407,22 @@ Hibernate:
     left outer join
         instrument instrument3_ 
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID
-15:02:30.677 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
-15:02:30.677 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
-15:02:30.677 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 7, First name: BB, Last name: King, Birthday: 1940-09-16
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 8, Singer id: 7, Title: My Kind of Blues, Release Date: 1961-08-18
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 9, Singer id: 7, Title: A Heart Full of Blues, Release Date: 1962-04-20
-15:02:30.678 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
-15:02:30.679 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
-15:02:30.679 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.679 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:30.682 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:44.373 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+18:31:44.373 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:31:44.373 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.373 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+18:31:44.373 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 2, Singer id: 1, Title: Battle Studies, Release Date: 2009-11-17
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 7, First name: BB, Last name: King, Birthday: 1940-09-16
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 8, Singer id: 7, Title: My Kind of Blues, Release Date: 1961-08-18
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 9, Singer id: 7, Title: A Heart Full of Blues, Release Date: 1962-04-20
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
+18:31:44.374 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.374 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:44.377 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists
@@ -1438,7 +1438,7 @@ Hibernate:
 Hibernate: 
     
     drop sequence if exists hibernate_sequence
-15:02:30.826 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:44.516 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table album if exists
@@ -1506,9 +1506,9 @@ Hibernate:
        add constraint FK7cns9kt2xpdjavoy95w3a1m2p 
        foreign key (SINGER_ID) 
        references singer
-15:02:30.866 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
-15:02:30.878 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-15:02:30.904 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
+18:31:44.546 [Test worker] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50a824ab'
+18:31:44.560 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:31:44.584 [Test worker] INFO  c.a.p.c.c.DBInitializer - Starting database initialization...
 Hibernate: 
     /* get current state com.apress.prospring5.ch7.entities.Instrument */ select
         instrument_.INSTRUMENT_ID 
@@ -1516,7 +1516,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.912 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
+18:31:44.591 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Guitar
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1532,7 +1532,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.914 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
+18:31:44.593 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Piano
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1548,7 +1548,7 @@ Hibernate:
         instrument instrument_ 
     where
         instrument_.INSTRUMENT_ID=?
-15:02:30.916 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
+18:31:44.595 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Instrument saved with id: Voice
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Instrument
         */ insert 
@@ -1563,7 +1563,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.918 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:44.598 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1608,7 +1608,7 @@ Hibernate:
     call next value for hibernate_sequence
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.923 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
+18:31:44.602 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 4
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1635,7 +1635,7 @@ Hibernate:
             (?, ?)
 Hibernate: 
     call next value for hibernate_sequence
-15:02:30.926 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
+18:31:44.605 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 6
 Hibernate: 
     /* insert com.apress.prospring5.ch7.entities.Singer
         */ insert 
@@ -1652,7 +1652,7 @@ Hibernate:
             (SINGER_ID, INSTRUMENT_ID) 
         values
             (?, ?)
-15:02:30.927 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
+18:31:44.606 [Test worker] INFO  c.a.p.c.c.DBInitializer - Database initialization finished.
 Hibernate: 
     /* Singer.findById */ select
         distinct singer0_.id as id1_2_0_,
@@ -1683,7 +1683,7 @@ Hibernate:
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID 
     where
         singer0_.id=?
-15:02:30.954 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
+18:31:44.632 [Test worker] INFO  c.a.p.c.d.SingerDaoImpl - Singer saved with id: 1
 Hibernate: 
     /* update
         com.apress.prospring5.ch7.entities.Singer */ update
@@ -1743,18 +1743,18 @@ Hibernate:
     left outer join
         instrument instrument3_ 
             on instrument2_.INSTRUMENT_ID=instrument3_.INSTRUMENT_ID
-15:02:30.962 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
-15:02:30.962 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-16
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
-15:02:30.963 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
-15:02:30.964 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
-15:02:30.966 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+18:31:44.638 [Test worker] INFO  c.a.p.c.SingerDaoTest -  ---- Listing singers with instruments:
+18:31:44.638 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 1, First name: John Clayton, Last name: Mayer, Birthday: 1977-10-16
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 3, Singer id: 1, Title: The Search For Everything, Release Date: 2017-01-20
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Piano
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 4, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Album - id: 5, Singer id: 4, Title: From The Cradle, Release Date: 1994-09-13
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - Singer - id: 6, First name: John, Last name: Butler, Birthday: 1975-04-01
+18:31:44.639 [Test worker] INFO  c.a.p.c.SingerDaoTest - 	Instrument: Guitar
+18:31:44.639 [Test worker] INFO  c.a.p.c.CleanUp -  ... Deleting database files.
+18:31:44.641 [Test worker] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
 Hibernate: 
     
     drop table album if exists

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.prospring5.ch8.SingerSummaryJPATest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-02-01T23:01:57" hostname="simon-XPS-15-9560" time="0.727">
+  <properties/>
+  <testcase name="testFindAll" classname="com.apress.prospring5.ch8.SingerSummaryJPATest" time="0.41"/>
+  <testcase name="testFindAllUntype" classname="com.apress.prospring5.ch8.SingerSummaryJPATest" time="0.317"/>
+  <system-out><![CDATA[18:31:57.885 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:31:57.899 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:57.957 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        new com.apress.prospring5.ch8.view.SingerSummary(s.firstName,
+        s.lastName,
+        a.title) 
+    from
+        Singer s 
+    left join
+        s.albums a 
+    where
+        a.releaseDate=(
+            select
+                max(a2.releaseDate) 
+            from
+                Album a2 
+            where
+                a2.singer.id = s.id
+        ) */ select
+            singer0_.FIRST_NAME as col_0_0_,
+            singer0_.LAST_NAME as col_1_0_,
+            albums1_.title as col_2_0_ 
+        from
+            singer singer0_ 
+        left outer join
+            album albums1_ 
+                on singer0_.ID=albums1_.SINGER_ID 
+        where
+            albums1_.RELEASE_DATE=(
+                select
+                    max(album2_.RELEASE_DATE) 
+                from
+                    album album2_ 
+                where
+                    album2_.SINGER_ID=singer0_.ID
+            )
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest -  ---- Listing singers summary:
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest - First name: John, Last Name: Mayer, Most Recent Album: The Search For Everything
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest - First name: Eric, Last Name: Clapton, Most Recent Album: From The Cradle 
+18:31:58.296 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:31:58.320 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:58.364 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        s.firstName,
+        s.lastName,
+        a.title 
+    from
+        Singer s 
+    left join
+        s.albums a 
+    where
+        a.releaseDate=(
+            select
+                max(a2.releaseDate) 
+            from
+                Album a2 
+            where
+                a2.singer.id = s.id
+        ) */ select
+            singer0_.FIRST_NAME as col_0_0_,
+            singer0_.LAST_NAME as col_1_0_,
+            albums1_.title as col_2_0_ 
+        from
+            singer singer0_ 
+        left outer join
+            album albums1_ 
+                on singer0_.ID=albums1_.SINGER_ID 
+        where
+            albums1_.RELEASE_DATE=(
+                select
+                    max(album2_.RELEASE_DATE) 
+                from
+                    album album2_ 
+                where
+                    album2_.SINGER_ID=singer0_.ID
+            )
+1: John, Mayer, The Search For Everything
+2: Eric, Clapton, From The Cradle 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Specification-Title: Pro Spring 5
+Class-Path: spring-context-support-5.0.2.RELEASE.jar spring-data-jpa-2
+ .0.2.RELEASE.jar spring-orm-5.0.2.RELEASE.jar spring-context-5.0.2.RE
+ LEASE.jar jcl-over-slf4j-1.7.25.jar logback-classic-1.2.3.jar h2-1.4.
+ 194.jar commons-lang3-3.5.jar hibernate-entitymanager-5.2.10.Final.ja
+ r spring-aspects-5.0.2.RELEASE.jar guava-21.0.jar spring-jdbc-5.0.2.R
+ ELEASE.jar spring-tx-5.0.2.RELEASE.jar spring-aop-5.0.2.RELEASE.jar s
+ pring-data-commons-2.0.2.RELEASE.jar spring-beans-5.0.2.RELEASE.jar s
+ pring-expression-5.0.2.RELEASE.jar spring-core-5.0.2.RELEASE.jar slf4
+ j-api-1.7.25.jar logback-core-1.2.3.jar hibernate-core-5.2.10.Final.j
+ ar hibernate-commons-annotations-5.0.1.Final.jar jboss-logging-3.3.0.
+ Final.jar dom4j-1.6.1.jar hibernate-jpa-2.1-api-1.0.0.Final.jar javas
+ sist-3.20.0-GA.jar byte-buddy-1.6.6.jar jboss-transaction-api_1.2_spe
+ c-1.0.1.Final.jar aspectjweaver-1.8.13.jar aspectjrt-1.8.12.jar sprin
+ g-jcl-5.0.2.RELEASE.jar antlr-2.7.7.jar jandex-2.0.3.Final.jar classm
+ ate-1.3.0.jar
+Created-By: Iuliana Cosmina
+Main-Class: com.apress.prospring5.ch8.SpringAuditJPADemo
+

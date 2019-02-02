@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.apress.prospring5.ch8.SingerSummaryJPATest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.apress.prospring5.ch8.SingerSummaryJPATest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.apress.prospring5.ch8.html">com.apress.prospring5.ch8</a> &gt; SingerSummaryJPATest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.727s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testFindAll</td>
+<td class="success">0.410s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFindAllUntype</td>
+<td class="success">0.317s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:31:57.885 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:31:57.899 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:57.957 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        new com.apress.prospring5.ch8.view.SingerSummary(s.firstName,
+        s.lastName,
+        a.title) 
+    from
+        Singer s 
+    left join
+        s.albums a 
+    where
+        a.releaseDate=(
+            select
+                max(a2.releaseDate) 
+            from
+                Album a2 
+            where
+                a2.singer.id = s.id
+        ) */ select
+            singer0_.FIRST_NAME as col_0_0_,
+            singer0_.LAST_NAME as col_1_0_,
+            albums1_.title as col_2_0_ 
+        from
+            singer singer0_ 
+        left outer join
+            album albums1_ 
+                on singer0_.ID=albums1_.SINGER_ID 
+        where
+            albums1_.RELEASE_DATE=(
+                select
+                    max(album2_.RELEASE_DATE) 
+                from
+                    album album2_ 
+                where
+                    album2_.SINGER_ID=singer0_.ID
+            )
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest -  ---- Listing singers summary:
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest - First name: John, Last Name: Mayer, Most Recent Album: The Search For Everything
+18:31:58.130 [Test worker] INFO  c.a.p.c.SingerSummaryJPATest - First name: Eric, Last Name: Clapton, Most Recent Album: From The Cradle 
+18:31:58.296 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:31:58.320 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:31:58.364 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        s.firstName,
+        s.lastName,
+        a.title 
+    from
+        Singer s 
+    left join
+        s.albums a 
+    where
+        a.releaseDate=(
+            select
+                max(a2.releaseDate) 
+            from
+                Album a2 
+            where
+                a2.singer.id = s.id
+        ) */ select
+            singer0_.FIRST_NAME as col_0_0_,
+            singer0_.LAST_NAME as col_1_0_,
+            albums1_.title as col_2_0_ 
+        from
+            singer singer0_ 
+        left outer join
+            album albums1_ 
+                on singer0_.ID=albums1_.SINGER_ID 
+        where
+            albums1_.RELEASE_DATE=(
+                select
+                    max(album2_.RELEASE_DATE) 
+                from
+                    album album2_ 
+                where
+                    album2_.SINGER_ID=singer0_.ID
+            )
+1: John, Mayer, The Search For Everything
+2: Eric, Clapton, From The Cradle 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.9</a> at Feb 1, 2019 6:31:58 PM</p>
+</div>
+</div>
+</body>
+</html>

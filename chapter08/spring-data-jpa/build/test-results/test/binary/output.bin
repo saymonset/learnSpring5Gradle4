@@ -1,0 +1,80 @@
+c18:32:00.713 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+X18:32:00.854 [Test worker] INFO  o.h.Version - HHH000412: Hibernate Core {5.2.10.Final}
+_18:32:00.856 [Test worker] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+l18:32:00.929 [Test worker] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+k18:32:01.169 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+v18:32:02.065 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+	    from
+,        Singer as generatedAlias0 */ select
+#            singer0_.ID as ID1_2_,
+1            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+1            singer0_.FIRST_NAME as FIRST_NA3_2_,
+0            singer0_.LAST_NAME as LAST_NAM4_2_,
+-            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_
+T18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+†18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+ˆ18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: 1945-03-30
+‡18:32:02.984 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+c18:32:03.186 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+k18:32:03.202 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+v18:32:03.258 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+	    from
+#        Singer as generatedAlias0 
+
+    where
+
+        (
+/            generatedAlias0.firstName=:param0 
+        ) 
+        and (
+.            generatedAlias0.lastName=:param1 
+        ) */ select
+#            singer0_.ID as ID1_2_,
+1            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+1            singer0_.FIRST_NAME as FIRST_NA3_2_,
+0            singer0_.LAST_NAME as LAST_NAM4_2_,
+-            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_ 
+        where
+#            singer0_.FIRST_NAME=? 
+%            and singer0_.LAST_NAME=?
+T18:32:03.378 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+†18:32:03.378 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16
+c18:32:03.572 [Test worker] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+k18:32:03.585 [Test worker] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+v18:32:03.630 [Test worker] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    /* select
+        generatedAlias0 
+	    from
+#        Singer as generatedAlias0 
+
+    where
+4        generatedAlias0.firstName=:param0 */ select
+#            singer0_.ID as ID1_2_,
+1            singer0_.BIRTH_DATE as BIRTH_DA2_2_,
+1            singer0_.FIRST_NAME as FIRST_NA3_2_,
+0            singer0_.LAST_NAME as LAST_NAM4_2_,
+-            singer0_.VERSION as VERSION5_2_ 
+        from
+            singer singer0_ 
+        where
+"            singer0_.FIRST_NAME=?
+T18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest -  ---- Listing singers:
+‡18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 3, First name: John, Last name: Butler, Birthday: 1975-04-01
+†18:32:03.744 [Test worker] INFO  c.a.p.c.SingerDataJPATest - Singer - Id: 1, First name: John, Last name: Mayer, Birthday: 1977-10-16

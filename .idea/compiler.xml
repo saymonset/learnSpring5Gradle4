@@ -16,6 +16,8 @@
       <module name="bean-instantiation-mode_test" target="1.8" />
       <module name="bean-name-aware_main" target="1.8" />
       <module name="bean-name-aware_test" target="1.8" />
+      <module name="boot-jpa_main" target="1.8" />
+      <module name="boot-jpa_test" target="1.8" />
       <module name="boot-simple_main" target="1.8" />
       <module name="boot-simple_test" target="1.8" />
       <module name="boot-web_main" target="1.8" />
@@ -50,6 +52,8 @@
       <module name="hibernate-base_test" target="1.8" />
       <module name="hibernate-crud_main" target="1.8" />
       <module name="hibernate-crud_test" target="1.8" />
+      <module name="hibernate-envers_main" target="1.8" />
+      <module name="hibernate-envers_test" target="1.8" />
       <module name="initializing-bean-destroy_main" target="1.8" />
       <module name="initializing-bean-destroy_test" target="1.8" />
       <module name="initializing-bean_main" target="1.8" />
@@ -60,6 +64,11 @@
       <module name="java-config-message-provider_test" target="1.8" />
       <module name="java-config_main" target="1.8" />
       <module name="java-config_test" target="1.8" />
+      <module name="jpa-criteria_generated" target="1.8" />
+      <module name="jpa-criteria_main" target="1.8" />
+      <module name="jpa-criteria_test" target="1.8" />
+      <module name="jpa-crud_main" target="1.8" />
+      <module name="jpa-crud_test" target="1.8" />
       <module name="jsr330_main" target="1.8" />
       <module name="jsr330_test" target="1.8" />
       <module name="message-source_main" target="1.8" />
@@ -92,6 +101,12 @@
       <module name="simple-types_test" target="1.8" />
       <module name="spring-boot-jdbc_main" target="1.8" />
       <module name="spring-boot-jdbc_test" target="1.8" />
+      <module name="spring-data-jpa-alt_main" target="1.8" />
+      <module name="spring-data-jpa-alt_test" target="1.8" />
+      <module name="spring-data-jpa-audit_main" target="1.8" />
+      <module name="spring-data-jpa-audit_test" target="1.8" />
+      <module name="spring-data-jpa_main" target="1.8" />
+      <module name="spring-data-jpa_test" target="1.8" />
       <module name="spring-jdbc-annotations_main" target="1.8" />
       <module name="spring-jdbc-annotations_test" target="1.8" />
       <module name="spring-jdbc-embedded_main" target="1.8" />
