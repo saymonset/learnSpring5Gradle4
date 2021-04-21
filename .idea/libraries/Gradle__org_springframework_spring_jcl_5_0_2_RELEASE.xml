@@ -5,6 +5,8 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.0.2.RELEASE/spring-jcl-5.0.2.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.2.RELEASE/2775609c9af91d93729f21d1b64eef233295e047/spring-jcl-5.0.2.RELEASE-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
